@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <span>大数据方向有{{num}}学生</span><button @click="incr">点击事件</button>
+    </div>
+</body>
+<script>
+    var app = new Vue({
+    el:"#app",
+        data:{
+          num:10
+        },
+        methods:{
+            incr(){
+                this.num++;
+            }
+        }
+    });
+</script>
+</html>
